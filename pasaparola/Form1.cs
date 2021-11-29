@@ -23,12 +23,9 @@ namespace pasaparola
 
         private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
         {
-
-            
                 if (e.KeyChar == (char)13)
                 {
                 cevap = textBox1.Text.ToLower();
-
                 if (cevap != "")
                 {
                     switch (soruno)
@@ -500,7 +497,6 @@ namespace pasaparola
                             break;
                     }
                 }
-
             }
         }
 
@@ -509,7 +505,6 @@ namespace pasaparola
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-           
             soruno++;
             linkLabel1.Text = "SONRAKİ";
             this.Text = soruno.ToString();
@@ -526,7 +521,7 @@ namespace pasaparola
                
              
             }
-           else if (soruno == 2)
+            else if (soruno == 2)
             {
                 richTextBox1.Text = "Yeşilliği ile ünlü marmara ilimiz?";
                 button2.BackColor = Color.Yellow;
@@ -673,10 +668,6 @@ namespace pasaparola
                 button23.Text = button22.Text;
 
             }
-
-            
-            
         }
-
     }
 }
